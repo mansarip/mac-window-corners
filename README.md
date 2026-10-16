@@ -11,6 +11,11 @@ macOS Tahoe (26) rounds window corners heavily: 16 pt for a plain window and 26 
 - **Optional panel support.** You can choose whether panels and utility windows follow the same radius.
 - **Apps to restart.** The app lists running apps that still use the old radius, each with a **Restart** button.
 
+> [!WARNING]
+> **Use at your own risk.** This project changes private, undocumented macOS preferences that Apple does not support. It is provided as-is, with no warranty of any kind. The author accepts no responsibility for any damage, data loss, instability, or other problems that result from using it. That includes unsaved work lost when apps are restarted. Back up your Mac before using it, and only use it if you understand and accept these risks.
+>
+> This project is not affiliated with, endorsed by, or supported by Apple Inc. macOS, AppKit and Liquid Glass are trademarks of Apple Inc.
+
 ## Requirements
 
 - macOS 26 (Tahoe) or later, on Apple silicon
@@ -61,3 +66,7 @@ The full reverse-engineering notes are in [macos-tahoe-window-corner-radius.md](
 - **Not every app is affected.** Apps that draw their own window frame are unaffected. Examples are frameless Electron windows and some browsers.
 - **The key is private and undocumented.** A future macOS update may remove it.
 - **Apple may see the setting.** AppKit reports non-standard values of this setting to Apple's analytics, if analytics sharing is turned on.
+
+## License
+
+[MIT](LICENSE). The software is provided "as is", without warranty of any kind. See the disclaimer above.
