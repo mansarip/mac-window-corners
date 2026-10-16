@@ -21,6 +21,24 @@ macOS Tahoe (26) rounds window corners heavily: 16 pt for a plain window and 26 
 - macOS 26 (Tahoe) or later, on Apple silicon
 - Xcode or the Command Line Tools, to build from source
 
+## Download
+
+1. Download `WindowCorners-1.0.zip` from [Releases](https://github.com/mansarip/mac-window-corners/releases/latest).
+2. Unzip it and move **Window Corners** to your Applications folder.
+3. Open the app.
+
+The app is not notarized by Apple, so macOS blocks it the first time you open it. To allow it:
+
+1. Open the app once and close the warning.
+2. Go to **System Settings → Privacy & Security** and scroll down.
+3. Click **Open Anyway**.
+
+Alternatively, run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Window Corners.app"
+```
+
 ## Build and install
 
 ```bash
